@@ -5,7 +5,7 @@
 
  }*/
 
- var deposit = document.getElementById('deposit').value();
+ /*var deposit = document.getElementById('deposit').value();
 deposit = Number(deposit);
 
 var withdraw = document.getElementById('withdraw');
@@ -17,4 +17,15 @@ function depositCash () {
   depositAmt = Number(depositAmt);
   balance = document.getElementById('deposit').value = balance
  
+}*/
+ 
+function balance() {
+
+  var diposit = document.getElementById("deposit").value;
+
+  var withdraw = document.getElementById("withdraw").value;
+
+  var balance = diposit - withdraw;
+
+  document.getElementById("check").value = balance;
 }
