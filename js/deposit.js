@@ -19,13 +19,22 @@ function depositCash () {
  
 }*/
  
-function balance() {
+/*function balance() {
 
   var diposit = document.getElementById("deposit").value;
 
   var withdraw = document.getElementById("withdraw").value;
 
-  var balance = diposit - withdraw;
+  var current = document.getElementById("current").value = current
+
+  var balance = diposit + current
 
   document.getElementById("check").value = balance;
+}*/
+
+function BankAccount = function(fullName, deposit, withdraw, currentAmount, balance){
+
+  
+
 }
+
