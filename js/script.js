@@ -3,6 +3,7 @@ function DepositWithdraw(deposit, withdraw){
     this.initial = initial;
     this.deposit = deposit;
     this.withdraw = withdraw;
+    
 }
 
 
@@ -11,8 +12,9 @@ function DepositWithdraw(deposit, withdraw){
         var inputtedInitial = $("input#initial"). val();
         var inputtedDeposit = $("input#deposit").val();
         var inputtedWithdraw = $("input#withdraw").val();
+        var 
 
-        var balance = new balance (inputtedDeposit, inputtedWithdraw)
+        var balance = balance (inputtedDeposit - inputtedWithdraw)
 
         DepositWithdraw.prototype.deposit = function() {
             var totalAmount = this.initial + deposit;
@@ -24,7 +26,7 @@ function DepositWithdraw(deposit, withdraw){
             if(totalAmount > 0 ) {
                 var balance = this.initial - withdraw;
             } else (totalAmount ===0)
-            alert "your balance is zero"
+            alert("your balance is zero") 
         }
 
     $(document).ready(function() {
