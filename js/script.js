@@ -26,14 +26,14 @@ function DepositWithdraw(deposit, withdraw){
             } else (totalAmount ===0)
             alert "your balance is zero"
         }
-        
+
     $(document).ready(function() {
     $("form#registration").submit(function(event) {
         event.preventDefault();
 
-        $("ul#balance").append("<li><span class='contact'>" + newbalance.deposite + "</span></li>");
-        $("#show-contact").show();
-        $("#show-contact p").text(newContact.firstName);
+        $("ul#balance").append("<li><span class='balance'>" + newbalance.deposite + "</span></li>");
+        $("#show-balance").show();
+        $("#show-balance p").text(newContact.firstName);
         $("input#deposit").val("");
         $("input#withdraw").val("");
       });
